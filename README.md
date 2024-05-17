@@ -159,7 +159,7 @@ Anaconda Navigatorを開いて，Jupyter Labを起動してください．
 
 <div style="width: 100%; max-width: 1000px;">
   <a href="https://pages.michinobu.jp/t/installanaconda.html" target="_blank">
-  <img src="src/assets/anaconda_navigator.png" alt="Anaconda Navigatorの画面" style="width: auto; height: 100%;">
+  <img src="src/assets/anaconda_navigator.png" alt="Anaconda Navigatorの画面" style="width: auto; height: auto;">
   </a>
 </div>
 
