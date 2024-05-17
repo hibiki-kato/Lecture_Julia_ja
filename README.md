@@ -1,54 +1,46 @@
-# Juliaへようこそ！
-これはJuliaのチュートリアルです．
+<div style="text-align: right;">
 <details>
-<summary>Language</summary>
+<summary><b>Language</b></summary>
 
 [English](https://github.com/hibiki-kato/Lecture_Julia)  
 [日本語](https://github.com/hibiki-kato/Lecture_Julia_ja)
 </details>
+</div>
+
+# Juliaへようこそ！
+これはプログラミング初心者向けのJuliaレッスンです．
+
+#　目次 
+- [Juliaへようこそ！](#juliaへようこそ)
+- [レッスンリスト](#レッスンリスト)
+- [Juliaのインストール方法](#juliaのインストール方法)
+- [パッケージのインストール方法](#パッケージのインストール方法)
+- [エディタとIDE](#エディタとide)
+  - [Visual Studio Code](#visual-studio-code)
+  - [Jupyter lab](#jupyter-lab)
+- [レポジトリレイアウト](#レポジトリレイアウト)
+
+
 
 <a name="logo"/>
-<div align="center">
+<div align="right">
 <a href="https://julialang.org/" target="_blank">
 <img src="src/assets/logo.svg" alt="Juliaのロゴ" width="210" height="142"></img>
 </a>
 </div>
 
-# レッスンリスト
 
-### Google Colaboratoryでコードを実行したい場合は、以下の手順に従ってください
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_Colab_Notebook_Template.ipynb)
+# レッスンリスト
+各レッスンのプログラムは`src`フォルダにあります．
+
+Google Colaboratoryでコードを実行したい場合は、[こちら](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_Colab_Notebook_Template.ipynb)に従ってください
 |回 | 概要 | ファイル |
 |:--------:|---|:----:|
-| レッスン1 | 入門 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](./src/lesson1.ipynb) |　
-| レッスン2 | 変数・データ型 |  |  |
-| レッスン3 | 制御フロー | |  |
-| レッスン4 | 関数 ||  |
-| レッスン5 | データ構造 ||  |
-
-
-# レポジトリレイアウト
-```sh
-.
-├── auto_pull
-├── data
-└── src
-    └── assets
-```
-
-<dl>
-    <dt>auto_pull</dt>
-    <dd>ここに格納されているファイルを以下のように実行することでこのレポジトリの更新をローカルに反映させます．
-    <li>Windows</li>
-      <pre><code class="language-sh">> .\auto_pull\pull.ps1</code></pre>
-      <li>macOS or Linux</li>
-      <pre><code class="language-sh">$ zsh ./auto_pull/pull.sh</code></pre>
-    </dd>
-    <dt>data</dt>
-    <dd>データファイルを保存するフォルダです．</dd>
-    <dt>src</dt>
-    <dd>ソースコードや画像ファイルを格納するフォルダです。</dd>
-</dl>
+| レッスン1 | 入門 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson1.ipynb) |　
+| レッスン2 | 変数・データ型 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson2.ipynb) |
+| レッスン3 | 制御フロー | |
+| レッスン4 | 関数 ||
+| レッスン5 | データ構造 ||
 
 
 # Juliaのインストール方法
@@ -109,4 +101,118 @@ $ (@v1.10) pkg> add <packagename>
   <dd>Juliaをjupyter labで使用するためのパッケージ．</dd>
   <li> <a href="https://juliadynamics.github.io/DynamicalSystems.jl"> DynamicalSystems </a> </li>
   <dd>非線形力学系と非線形時系列解析のための強力なライブラリ．
+</dl>
+
+```sh
+$ (@v1.10) pkg> add PyPlot IJulia DynamicalSystems
+```
+
+# エディタとIDE
+Juliaのコードを書くために使えるエディタやIDEは．多岐にわたります．詳細は[こちら](https://julialang.org/tools/)を参照してください．
+
+このレッスンでは，以下のエディタ，IDEのインストール方法を説明します．
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Jupyter Lab](https://jupyter.org/)
+
+## Visual Studio Code
+[ここ](https://code.visualstudio.com/)からVisual Studio Codeをインストールしてください．コマンドでインストールする場合は以下のコマンドを実行してください．
+
+```sh
+# Windows
+> winget install vscode
+# macOS
+$ brew install --cask visual-studio-code
+# Linux
+$ sudo apt install code
+```
+
+インストーラに従って，インストールが完了したら，Visual Studio Codeを開いてください．チュートリアルを終えたら，左側の拡張機能のアイコンをクリックして，拡張機能をインストールしましょう．
+<div style="width: 100%; max-width: 1000px;">
+  <img src="src/assets/VScode.png" alt="Anaconda Navigatorの画面" style="width: auto; height: 100%;">
+  </a>
+</div>
+
+推奨する拡張機能は以下の通りです．
+<dl>
+  <li> Julia (必須)</li>
+  <dd> Julia用の拡張機能． </dd>
+  <li> Jupyter (必須)</li>
+  <dd> VS codeでJupyterのノートブック形式を使えるようになります．</dd>
+  <li> Japanese Language Pack for Visual Studio Code </li>
+  <dd> VS codeの日本語化拡張機能．</dd>
+  <li> Path Intellisense </li>
+  <dd> ファイルパス(場所)を入力する際に補完機能を提供します．</dd>
+  <li> GitHub Copilot </li>
+  <dd> AIによる高度なコード補完機能．<a href="https://github.com/edu" target="_blank">Github Education</a>から教育機関のメールアドレスで登録すれば．無料で使えます．
+  学生証のアップロードの方法などは<a href ="https://docs.github.com/ja/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student" target="_blank">こちら</a>を参照してください．AIのサポートはコーディングにパラダイムシフトを起こしているので，ぜひ活用してください．
+  </dd>
+  <li> zenkaku </li>
+  <dd> バグの温床である全角文字を検出してくれる拡張機能． </dd>
+  <li> vscode-icons </li>
+  <dd> ファイルアイコンを見やすくする拡張機能．</dd>
+</dl>
+
+上のJuliaインストールと合わせて，これでJuliaの環境が整いました．
+
+## Jupyter lab
+
+Jupyter labはAnacondaをインストールすることで使用できます．[ここ](https://www.anaconda.com/products/distribution)からAnacondaをインストールしてください．(サインアップの必要はありません)
+
+Anaconda Navigatorを開いて，Jupyter Labを起動してください．
+
+<div style="width: 100%; max-width: 1000px;">
+  <a href="https://pages.michinobu.jp/t/installanaconda.html" target="_blank">
+  <img src="src/assets/anaconda_navigator.png" alt="Anaconda Navigatorの画面" style="width: auto; height: 100%;">
+  </a>
+</div>
+
+Anaconda Navigatorが使えない場合は，以下のコマンドを実行してください．
+
+```sh
+# Windows (Anaconda Prompt)
+> jupyter lab
+# macOS or Linux
+$ jupyter lab
+```
+
+Jupyter labがインストールされていない場合は以下のコマンドを実行してください．
+
+```sh
+# Windows (Anaconda Prompt)
+> conda install -c conda-forge jupyterlab
+
+# macOS or Linux
+$ conda install -c conda-forge jupyterlab
+```
+
+Jupyter labを開いて，Juliaのアイコンがあれば，Juliaが使える環境が整っています．新しいノートブックを作成するには，一番上のNotebookのうち，Juliaを選択してください．
+
+<div style="width: 100%; max-width: 1000px;">
+  <img src="src/assets/jupyter_lab_start.png" alt="jupyter labの画面" style="width: auto; height: auto;">
+</div>
+
+# レポジトリレイアウト
+```sh
+.
+├── auto_pull
+├── data
+└── src
+    └── assets
+```
+
+<dl>
+    <dt>auto_pull</dt>
+    <dd>
+    <details open>
+    <summary><b>ここに格納されているファイルを以下のように実行することでこのレポジトリの更新をローカルに反映させます．</b></summary>
+    <li>Windows</li>
+          <pre><code class="language-sh">> .\auto_pull\pull.ps1</code></pre>
+          <li>macOS or Linux</li>
+          <pre><code class="language-sh">$ zsh ./auto_pull/pull.sh</code></pre>
+    </details>
+    </dd>
+    <dt>data</dt>
+    <dd>データファイルを保存するフォルダです．</dd>
+    <dt>src</dt>
+    <dd>ソースコードや画像ファイルを格納するフォルダです。</dd>
 </dl>
