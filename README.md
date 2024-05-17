@@ -1,4 +1,4 @@
-<div style="text-align: right;">
+<div align = "right">
 <details>
 <summary><b>Language</b></summary>
 
@@ -8,9 +8,11 @@
 </div>
 
 # Juliaへようこそ！
-これはプログラミング初心者向けのJuliaレッスンです．
+これは，プログラミング初心者向けJuliaレッスンです．
+<img src="src//assets/logo.svg" height="150" align = "right"  /> 
 
-#　目次 
+**目次**
+
 - [Juliaへようこそ！](#juliaへようこそ)
 - [レッスンリスト](#レッスンリスト)
 - [Juliaのインストール方法](#juliaのインストール方法)
@@ -21,13 +23,6 @@
 - [レポジトリレイアウト](#レポジトリレイアウト)
 
 
-
-<a name="logo"/>
-<div align="right">
-<a href="https://julialang.org/" target="_blank">
-<img src="src/assets/logo.svg" alt="Juliaのロゴ" width="210" height="142"></img>
-</a>
-</div>
 
 
 # レッスンリスト
