@@ -124,8 +124,9 @@ $ sudo apt install code
 ```
 
 インストーラに従って，インストールが完了したら，Visual Studio Codeを開いてください．チュートリアルを終えたら，左側の拡張機能のアイコンをクリックして，拡張機能をインストールしましょう．
+
 <div style="width: 100%; max-width: 1000px;">
-  <img src="src/assets/VScode.png" alt="Anaconda Navigatorの画面" style="width: auto; height: 100%;">
+  <img src="src/assets/VScode.png" alt="VScodeの画面" style="width: auto; height: auto;">
   </a>
 </div>
 
