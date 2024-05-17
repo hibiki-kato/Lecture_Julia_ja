@@ -8,7 +8,7 @@
 </div>
 
 # Juliaへようこそ！
-これは，プログラミング初心者向けJuliaレッスンです．
+このページは，プログラミング初心者向けJuliaレッスンの日本語版です．
 <img src="src//assets/logo.svg" height="150" align = "right"  /> 
 
 **目次**
@@ -103,9 +103,11 @@ $ (@v1.10) pkg> add PyPlot IJulia DynamicalSystems
 ```
 
 # エディタとIDE
-Juliaのコードを書くために使えるエディタやIDEは．多岐にわたります．詳細は[こちら](https://julialang.org/tools/)を参照してください．
+コーディングには，高機能なエディタやIDEが欠かせません．
 
-このレッスンでは，以下のエディタ，IDEのインストール方法を説明します．
+Juliaのコードを書くために使えるエディタやIDE(統合開発環境)は．多岐にわたります．詳細は[こちら](https://julialang.org/tools/)を参照してください．
+
+このレッスンでは，以下のエディタ，IDEのインストール方法を紹介します．
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Jupyter Lab](https://jupyter.org/)
 
