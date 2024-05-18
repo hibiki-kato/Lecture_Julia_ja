@@ -14,28 +14,41 @@
 **目次**
 
 - [Juliaへようこそ！](#juliaへようこそ)
-- [レッスンリスト](#レッスンリスト)
+- [レッスンリスト(準備中\&適当)](#レッスンリスト準備中適当)
 - [Juliaのインストール方法](#juliaのインストール方法)
 - [パッケージのインストール方法](#パッケージのインストール方法)
 - [エディタとIDE](#エディタとide)
   - [Visual Studio Code](#visual-studio-code)
-  - [Jupyter lab](#jupyter-lab)
+  - [JupyterLab](#jupyterlab)
 - [レポジトリレイアウト](#レポジトリレイアウト)
 
 
 
 
-# レッスンリスト
+# レッスンリスト(準備中&適当)
 各レッスンのプログラムは`src`フォルダにあります．
 
 Google Colaboratoryでコードを実行したい場合は、[こちら](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_Colab_Notebook_Template.ipynb)に従ってください
-|回 | 概要 | ファイル |
-|:--------:|---|:----:|
-| レッスン1 | 入門 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson1.ipynb) |　
-| レッスン2 | 変数・データ型 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson2.ipynb) |
-| レッスン3 | 制御フロー | |
-| レッスン4 | 関数 ||
-| レッスン5 | データ構造 ||
+|     回     | 概要                        |                                                                                    ファイル                                                                                     |
+| :--------: | --------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| レッスン1  | 入門                        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson1.ipynb) |
+| レッスン2  | 変数・データ型              | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson2.ipynb) |
+| レッスン3  | 制御フロー                  |                                                                                                                                                                                 |
+| レッスン4  | 関数                        |                                                                                                                                                                                 |
+| レッスン5  | データ構造                  |                                                                                                                                                                                 |
+| レッスン6  | ファイル入出力              |                                                                                                                                                                                 |
+| レッスン7  | パッケージの使い方          |                                                                                                                                                                                 |
+| レッスン8  | データの可視化              |                                                                                                                                                                                 |
+| レッスン9  | データの前処理              |                                                                                                                                                                                 |
+| レッスン10 | 機械学習                    |                                                                                                                                                                                 |
+| レッスン11 | ディープラーニング          |                                                                                                                                                                                 |
+| レッスン12 | パフォーマンスチューニング  |                                                                                                                                                                                 |
+| レッスン13 | GPUプログラミング           |                                                                                                                                                                                 |
+| レッスン14 | 並列プログラミング          |                                                                                                                                                                                 |
+| レッスン15 | データベースの使い方        |                                                                                                                                                                                 |
+| レッスン16 | Webアプリケーションの作り方 |                                                                                                                                                                                 |
+| レッスン17 | データサイエンスの基礎      |                                                                                                                                                                                 |
+| レッスン18 | データサイエンスの実践      |                                                                                                                                                                                 |
 
 
 # Juliaのインストール方法
@@ -81,35 +94,40 @@ $ julia
 
 julia>
 ```
-そこで，`]`を押してください．その後，
+そこで，`]`を押してください．その後，`add`コマンドを使ってパッケージをインストールします．
 ```sh
 $ (@v1.10) pkg> add <packagename>
 ```
-を実行すれば，パッケージがインストールされます．`<packagename>`はパッケージの名前に置き換えてください．*e.g.* `add PyPlot`
+を実行すれば，パッケージがインストールされます．`<packagename>`はパッケージの名前に置き換えてください．*e.g.* `add Plots`
 
 このレッスンでは以下のパッケージを使用します．
 
 <dl>
-  <li> PyPlot </li>
+  <li> Plots </li>
   <dd>データを視覚化するためのグラフソフト．</dd>
+  <li> PyPlot </li>
+  <dd>データを視覚化するためのグラフソフト(matplotlibのJulia版)．</dd>
   <li> IJulia </li>
-  <dd>Juliaをjupyter labで使用するためのパッケージ．</dd>
+  <dd>JuliaをJupyterLabで使用するためのパッケージ．</dd>
   <li> <a href="https://juliadynamics.github.io/DynamicalSystems.jl"> DynamicalSystems </a> </li>
-  <dd>非線形力学系と非線形時系列解析のための強力なライブラリ．
+  <dd>非線形力学系と非線形時系列解析のための強力なライブラリ．</dd>
+  <li> <a href="https://github.com/JuliaGPU/KernelAbstractions.jl/tree/main"> KernelAbstractions </a> </li>
+  <dd><s> NVIDIA, AMD, Intel, Appleと異なるベンダーのGPU向けのコードを共通の1つのコードで使えるようにするパッケージ．</s>></dd>
 </dl>
 
 ```sh
-$ (@v1.10) pkg> add PyPlot IJulia DynamicalSystems
+$ (@v1.10) pkg> add Plots PyPlot IJulia DynamicalSystems KernelAbstractions
 ```
 
 # エディタとIDE
-コーディングには，高機能なエディタやIDEが欠かせません．
+コーディングには，高機能なエディタやIDEが欠かせません．  
+エディタとは，プログラムを書くためのテキストエディタのことで，IDEは，エディタに加えて，デバッグやビルド(プログラムを機械語に変換)や実行などの機能を提供する統合開発環境のことです．
 
 Juliaのコードを書くために使えるエディタやIDE(統合開発環境)は．多岐にわたります．詳細は[こちら](https://julialang.org/tools/)を参照してください．
 
 このレッスンでは，以下のエディタ，IDEのインストール方法を紹介します．
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Jupyter Lab](https://jupyter.org/)
+- [JupyterLab](https://jupyter.org/)
 
 ## Visual Studio Code
 [ここ](https://code.visualstudio.com/)からVisual Studio Codeをインストールしてください．コマンドでインストールする場合は以下のコマンドを実行してください．
@@ -152,11 +170,11 @@ $ sudo apt install code
 
 上のJuliaインストールと合わせて，これでJuliaの環境が整いました．
 
-## Jupyter lab
+## JupyterLab
 
-Jupyter labはAnacondaをインストールすることで使用できます．[ここ](https://www.anaconda.com/products/distribution)からAnacondaをインストールしてください．(サインアップの必要はありません)
+JupyterLabはAnacondaをインストールすることで使用できます．[ここ](https://www.anaconda.com/products/distribution)からAnacondaをインストールしてください．(サインアップの必要はありません)
 
-Anaconda Navigatorを開いて，Jupyter Labを起動してください．
+Anaconda Navigatorを開いて，JupyterLabを起動してください．
 
 <div style="width: 100%; max-width: 1000px;">
   <a href="https://pages.michinobu.jp/t/installanaconda.html" target="_blank">
@@ -173,7 +191,7 @@ Anaconda Navigatorが使えない場合は，以下のコマンドを実行し�
 $ jupyter lab
 ```
 
-Jupyter labがインストールされていない場合は以下のコマンドを実行してください．
+JupyterLabがインストールされていない場合は以下のコマンドを実行してください．
 
 ```sh
 # Windows (Anaconda Prompt)
@@ -183,10 +201,10 @@ Jupyter labがインストールされていない場合は以下のコマンド
 $ conda install -c conda-forge jupyterlab
 ```
 
-Jupyter labを開いて，Juliaのアイコンがあれば，Juliaが使える環境が整っています．新しいノートブックを作成するには，一番上のNotebookのうち，Juliaを選択してください．
+JupyterLabを開いて，Juliaのアイコンがあれば，Juliaが使える環境が整っています．新しいノートブックを作成するには，一番上のNotebookのうち，Juliaを選択してください．
 
 <div style="width: 100%; max-width: 1000px;">
-  <img src="src/assets/jupyter_lab_start.png" alt="jupyter labの画面" style="width: auto; height: auto;">
+  <img src="src/assets/jupyter_lab_start.png" alt="JupyterLabの画面" style="width: auto; height: auto;">
 </div>
 
 # レポジトリレイアウト
