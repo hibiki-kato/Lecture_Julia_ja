@@ -29,14 +29,14 @@
 各レッスンのプログラムは`src`フォルダにあります．
 
 Google Colaboratoryでコードを実行したい場合は、[こちら](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_Colab_Notebook_Template.ipynb)に従ってください
-|     回     | 概要                        |                                                                                    ファイル                                                                                     |
-| :--------: | --------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| レッスン1  | 入門                        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson1.ipynb) |
-| レッスン2  | 変数・データ型              | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson2.ipynb) |
-| レッスン3  | 制御フロー                  |                                                                                                                                                                                 |
-| レッスン4  | 関数                        |                                                                                                                                                                                 |
-| レッスン5  | データ構造                  |                                                                                                                                                                                 |
-| レッスン6  | ファイル入出力              |                                                                                                                                                                                 |
+|回| 概要|ファイル|
+| :--------: | --------------------------- | :-----: |
+| レッスン1  | 入門| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson1.ipynb) |
+| レッスン2  | 変数・データ型| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson2.ipynb) |
+| レッスン3  | 制御フロー|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson3.ipynb)|
+| レッスン4  | 関数|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hibiki-kato/Lecture_Julia_ja/blob/main/src/lesson4.ipynb)|
+| レッスン5  | データ構造||
+| レッスン6  | ファイル入出力||
 | レッスン7  | パッケージの使い方          |                                                                                                                                                                                 |
 | レッスン8  | データの可視化              |                                                                                                                                                                                 |
 | レッスン9  | データの前処理              |                                                                                                                                                                                 |
