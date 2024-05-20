@@ -162,6 +162,8 @@ $ sudo apt install code
   <dd> AIによる高度なコード補完機能．<a href="https://github.com/edu" target="_blank">Github Education</a>から教育機関のメールアドレスで登録すれば．無料で使えます．
   学生証のアップロードの方法などは<a href ="https://docs.github.com/ja/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student" target="_blank">こちら</a>を参照してください．AIのサポートはコーディングにパラダイムシフトを起こしているので，ぜひ活用してください．
   </dd>
+  <li> Code Runner </li>
+  <dd> コードをワンクリックで実行するための拡張機能．</dd>
   <li> zenkaku </li>
   <dd> バグの温床である全角文字を検出してくれる拡張機能． </dd>
   <li> vscode-icons </li>
